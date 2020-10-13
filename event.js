@@ -1,10 +1,10 @@
 /*
 Citation Generator
-http://www.mickschroeder.com/citation
+https://cite.mickschroeder.com
 
-Made by Mick Schroeder
+MIT License
+Copyright (c) 2020 Mick Schroeder
 */
-
 
 // Execute the inject.js in a tab and call a method,
 // passing the result to a callback function.
@@ -14,8 +14,8 @@ function injectedMethod (tab, method, callback) {
   });
 }
 
-// Get background-color values from the current tab
-// and open them in Colorpeek.
+// Load citation data from current webpage
+// Open new tab loading query into cite.mickschroeder.com
 function getCitationData (tab) {
 
   injectedMethod(tab, 'getCitationData', function (response) {

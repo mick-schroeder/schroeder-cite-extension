@@ -1,8 +1,9 @@
 /*
 Citation Generator
-http://www.mickschroeder.com/citation
+https://cite.mickschroeder.com
 
-Made by Mick Schroeder
+MIT License
+Copyright (c) 2020 Mick Schroeder
 */
 
 
@@ -15,7 +16,7 @@ var injected = injected || (function(){
   // we can use from our event script.
   var methods = {};
 
-// Return all of the background-color values
+// Return citation data we can find on the current webpage
 methods.getCitationData = function(){
   
   // Get all the meta tag nodes on a page
